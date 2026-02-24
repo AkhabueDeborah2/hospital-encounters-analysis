@@ -20,7 +20,7 @@ A real-world healthcare analytics case study exploring utilization, costs, and p
 
 ## 📌 Project Title
 
-**Hospital Encounter Analytics: Trends, Costs, and Patient Behavior**
+**Hospital Encounter Analytics: Trends, Costs, and Patient Behavior**  
 ![SQL](https://img.shields.io/badge/SQL-MySQL-blue)
 ![Power BI](https://img.shields.io/badge/BI-PowerBI-yellow)
 ![Domain](https://img.shields.io/badge/Domain-Healthcare-green)

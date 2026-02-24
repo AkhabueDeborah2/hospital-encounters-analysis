@@ -14,6 +14,7 @@ A real-world healthcare analytics case study exploring utilization, costs, and p
   - [Patient Behavior Insights](#patient-behavior-insights)
 - [💡 Skills Demonstrated](#-skills-demonstrated)
 - [📊 Results & Business Recommendations](#-results--business-recommendations)
+- [⚠ Limitations](#-limitations)
 - [📌 Project Source & Attribution](#-project-source--attribution)
 - [🚀 Next Steps](#-next-steps)
 - [🧠 Author](#-author)  
@@ -216,6 +217,17 @@ hospital-encounters-analysis/
 
 ### Executive Takeaway
 The data suggests that meaningful operational and financial gains can be achieved through targeted interventions rather than large structural changes. Closing coverage gaps, optimizing short-stay workflows, and focusing on high-cost and high-utilization segments can significantly improve both care efficiency and financial resilience.
+
+---
+
+## ⚠ Limitations
+
+While the analysis provides strong directional insights, several limitations should be considered:
+
+- The dataset is synthetic and may not fully represent real-world healthcare variability.  
+- Absence of clinical severity indicators limits deeper risk stratification.  
+- No demographic or socioeconomic segmentation was included in this iteration.  
+- The analysis is cross-sectional and does not track long-term patient outcomes.
 
 ---
 

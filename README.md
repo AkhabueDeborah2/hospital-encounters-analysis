@@ -1,84 +1,105 @@
 # hospital-encounters-analysis
 Healthcare analytics case study using MySQL and Power BI to analyze hospital encounters, costs, and patient behavior.
 
-# 🏥 Hospital Analytics  
-### Trends, Costs, and Patient Behavior Insights
+## 📌 Executive Summary
 
-# Executive Summary
+Healthcare systems must balance utilization, cost control, and patient outcomes.  
+This project analyzes hospital encounter data to uncover patterns in:
+
+- Care delivery mix  
+- Financial coverage gaps  
+- Cost drivers  
+- Patient readmissions  
+
+Using MySQL for data analysis and Power BI for visualization, the project transforms raw encounter data into executive-ready dashboards.
+
+### Key Highlights
+- ~49% of encounters had zero payer coverage, indicating potential uncompensated care risk  
+- Most encounters were short-stay (<24 hours), reflecting high outpatient and ambulatory volume  
+- High-acuity procedures (e.g., ICU-related interventions) disproportionately drive average costs  
+- A small subset of patients account for repeated 30-day readmissions  
+
+---
+
+## 🎯 Business Problem
+
+Healthcare administrators need visibility into:
+
+1. How encounter volume changes over time  
+2. Which types of care dominate service delivery  
+3. Where financial risk exists due to coverage gaps  
+4. Which patients contribute to repeat utilization  
+
+Without structured analysis, decision-makers lack clarity on operational and financial performance.
+
+---
+
+## 🛠 Methodology
+
+### 1️⃣ Data Exploration (MySQL)
+- Aggregated encounter volume by year  
+- Calculated encounter class distribution (%)  
+- Computed length-of-stay using `TIMESTAMPDIFF`  
+- Identified uncovered encounters  
+- Analyzed procedure frequency and cost  
+- Used window functions (`LEAD`) for 30-day readmission logic  
+
+### 2️⃣ Data Transformation
+- Created BI-ready aggregated views  
+- Standardized metric definitions (e.g., 30-day readmission logic)  
+- Structured outputs for dashboard consumption  
+
+### 3️⃣ Visualization (Power BI)
+- Built 3 themed dashboard pages:
+  - Encounter Overview  
+  - Cost & Coverage Insights  
+  - Patient Behavior Insights  
+- Applied consistent color hierarchy and executive design principles  
+
+---
 
 ## 📊 Dashboards
 
-### Encounter Overview
+### 🔹 Encounter Overview
 ![Encounter Overview](images/encounter-overview.png)
 
-### Cost & Coverage Insights
-![Cost & Coverage](images/cost-coverage-insights.png)
-
-### Patient Behavior Insights
-![Patient Behavior](images/patient-behavior-insights.png)
-
-
-## 📊 Results & Business Recommendations
-
-### 1. Stabilize Outpatient Capacity to Handle Demand Swings  
-**Evidence:** Encounter volumes peaked in 2014 and again in 2021, with ambulatory care consistently dominating total encounters across all years.  
-**Impact:** A heavy reliance on ambulatory volume means sudden demand spikes can quickly overwhelm outpatient infrastructure, while sharp declines risk underutilized capacity and planning inefficiencies.  
-**Recommendation:** Invest in scalable outpatient infrastructure and flexible staffing models that can expand during peaks and contract during lower-demand periods. Strengthening the system where volume is already concentrated improves resilience without requiring structural care model shifts.
+**Insights**
+- Encounter volume peaked in 2014 and 2021  
+- Care delivery mix remained stable over time  
+- Only a small proportion of encounters exceeded 24 hours  
 
 ---
 
-### 2. Optimize Same-Day Care Pathways  
-**Evidence:** Over 95% of encounters lasted under 24 hours, confirming a predominantly short-stay care model.  
-**Impact:** Without optimized fast-track workflows, short-stay patients can still create bottlenecks by occupying beds and staff time longer than necessary, reducing throughput and increasing per-encounter costs.  
-**Recommendation:** Implement streamlined same-day care pathways, including fast-track triage and discharge optimization. Even marginal efficiency gains across high-volume short-stay encounters can significantly improve capacity, patient flow, and operational cost control.
+### 🔹 Cost & Coverage Insights
+![Cost & Coverage Insights](images/cost-coverage-insights.png)
+
+**Insights**
+- Nearly half of encounters lacked payer coverage  
+- Preventive and routine procedures dominate volume  
+- ICU-related and complex interventions drive cost concentration  
 
 ---
 
-### 3. Address Coverage Gaps at Intake  
-**Evidence:** Approximately 49% of encounters had zero payer coverage, representing a substantial uncompensated care burden.  
-**Impact:** High volumes of uncovered encounters directly pressure hospital margins and limit reinvestment into staffing, equipment, and service expansion. This pattern may indicate gaps in eligibility screening or patient financial navigation at intake.  
-**Recommendation:** Introduce proactive coverage screening and financial counseling at the point of entry. Connecting patients early to Medicaid eligibility, charity care programs, or structured payment options can meaningfully reduce uncompensated care exposure and improve financial sustainability.
+### 🔹 Patient Behavior Insights
+![Patient Behavior Insights](images/patient-behavior-insights.png)
+
+**Insights**
+- Patient volumes show cyclical patterns over time  
+- 30-day readmission cohort identified  
+- A small subset of patients drive repeated admissions  
 
 ---
-
-### 4. Monitor High-Cost Clinical Pathways  
-**Evidence:** Routine preventive and assessment procedures dominated overall volume, but a small subset of ICU admissions and complex interventions drove disproportionately high average costs.  
-**Impact:** Without active monitoring, sporadic spikes in high-acuity interventions can distort cost metrics and complicate budgeting and forecasting.  
-**Recommendation:** Establish cost-monitoring dashboards for high-acuity pathways and standardize escalation protocols where clinically appropriate. The goal is not to limit care intensity, but to ensure the most resource-intensive interventions are deployed deliberately and consistently.
-
----
-
-### 5. Reduce Late-Stage Care Among High-Risk Payer Groups  
-**Evidence:** Public and uninsured payer groups exhibited the highest average claim costs, suggesting patients may be presenting later with more severe conditions.  
-**Impact:** Treating advanced conditions within underinsured populations increases clinical complexity while simultaneously reducing cost recovery, creating a compounding financial and operational strain.  
-**Recommendation:** Expand community outreach and early-intervention programs targeting underinsured populations. Encouraging earlier care engagement shifts utilization from high-cost emergency interventions toward lower-cost preventive care, improving outcomes while reducing financial volatility.
-
----
-
-### 6. Target High-Frequency Utilizers to Reduce Readmissions  
-**Evidence:** 771 patients were readmitted within 30 days, with readmissions concentrated among a relatively small subset of patients.  
-**Impact:** Recurrent admissions consume disproportionate clinical resources and often signal gaps in post-discharge coordination or chronic disease management.  
-**Recommendation:** Implement targeted care management for high-risk patients, including structured discharge planning, follow-up outreach, and care coordination programs. Focusing interventions on the small population driving repeat utilization offers a high-return opportunity to improve outcomes while freeing capacity.
-
----
-
-### Executive Takeaway  
-Overall, the analysis indicates that meaningful operational and financial gains can be achieved through targeted interventions rather than large-scale structural change. By optimizing short-stay workflows, closing coverage gaps, and focusing resources on high-cost and high-utilization segments, healthcare systems can improve both care efficiency and financial resilience.
-
 
 ## 💡 Skills Demonstrated
-- SQL aggregation and filtering
-+ Window functions (LEAD, DATEDIFF)
-* Cohort analysis (30-day readmissions)
-- Data transformation for BI
-+ Power BI dashboard storytelling
-* Healthcare data interpretation
+- SQL aggregation & filtering  
+- Window functions (LEAD, DATEDIFF)  
+- Cohort analysis (30-day readmissions)  
+- Data transformation for BI  
+- Metric standardization  
+- Dashboard storytelling  
+- Healthcare domain interpretation  
+
+---
 
 ## 📁 Repository Structure
 
-/images
-/sql
-
-## 📌 Attribution
-This project is based on a guided case study from Maven Analytics.  
-SQL implementation, dashboard design, and extended analysis were completed independently.

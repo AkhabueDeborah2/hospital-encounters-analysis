@@ -1,9 +1,15 @@
 # hospital-encounters-analysis
-Healthcare analytics case study using MySQL and Power BI to analyze hospital encounters, costs, and patient behavior.
+A real-world healthcare analytics case study exploring utilization, costs, and patient readmissions using MySQL and Power BI.
 
 
 # 🏥 Hospital Analytics  
 ### Trends, Costs, and Patient Behavior Insights
+![SQL](https://img.shields.io/badge/SQL-MySQL-blue)
+![Power BI](https://img.shields.io/badge/BI-PowerBI-yellow)
+![Domain](https://img.shields.io/badge/Domain-Healthcare-green)
+![Project Type](https://img.shields.io/badge/Project-Case%20Study-purple)
+
+![Dashboard Preview](images/encounter-overview.png)
 
 ## 📌 Executive Summary
 
@@ -25,6 +31,18 @@ Using MySQL for data analysis and Power BI for visualization, the project transf
 
 ---
 
+## 🎯 What This Project Demonstrates
+
+This project showcases an end-to-end healthcare analytics workflow:
+
+- Translating raw clinical encounter data into actionable insights  
+- Writing structured SQL for aggregation and cohort analysis  
+- Building BI-ready semantic layers using views  
+- Designing executive dashboards in Power BI  
+- Communicating findings through business recommendations  
+- Applying healthcare domain context to interpret results
+
+  
 ## 🎯 Business Problem
 
 Healthcare administrators need visibility into:

@@ -103,15 +103,15 @@ Without structured analysis, decision-makers lack clarity on operational and fin
 
 ## 📁 Repository Structure
 
-hospital-encounters-analysis/
+hospital-encounters-analysis/  
+│  
+├── images/  
+│ ├── encounter-overview.png  
+│ ├── cost-coverage-insights.png  
+│ └── patient-behavior-insights.png  
 │
-├── images/
-│ ├── encounter-overview.png
-│ ├── cost-coverage-insights.png
-│ └── patient-behavior-insights.png
-│
-└── sql/
-└── hospital-encounters-analysis.sql
+└── sql/  
+└── hospital-encounters-analysis.sql  
 
 
 

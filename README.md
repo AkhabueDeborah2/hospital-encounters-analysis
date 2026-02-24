@@ -1,5 +1,5 @@
 # hospital-encounters-analysis
-A real-world healthcare analytics case study exploring utilization, costs, and patient readmissions using MySQL and Power BI.
+A healthcare analytics case study exploring utilization, costs, and patient readmissions using MySQL and Power BI.
 
 ## 📚 Table of Contents
 
@@ -9,9 +9,9 @@ A real-world healthcare analytics case study exploring utilization, costs, and p
 - [🎯 Business Problem](#-business-problem)
 - [🛠 Methodology](#-methodology)
 - [📊 Dashboards](#-dashboards)
-  - [Encounter Overview](#encounter-overview)
-  - [Cost & Coverage Insights](#cost--coverage-insights)
-  - [Patient Behavior Insights](#patient-behavior-insights)
+  - [Encounter Overview](#-encounter-overview)
+  - [Cost & Coverage Insights](#-cost--coverage-insights)
+  - [Patient Behavior Insights](#-patient-behavior-insights)
 - [💡 Skills Demonstrated](#-skills-demonstrated)
 - [📊 Results & Business Recommendations](#-results--business-recommendations)
 - [⚠ Limitations](#-limitations)

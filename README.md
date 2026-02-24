@@ -239,7 +239,6 @@ SQL implementation, dashboard design, and extended analysis were completed indep
 
 ## 🚀 Next Steps
 - Introduce star schema modeling for enhanced BI scalability  
-- Add time-intelligence measures using a date dimension  
 - Expand into predictive modeling for readmission risk  
 - Conduct deeper segmentation of high-frequency utilizers  
 

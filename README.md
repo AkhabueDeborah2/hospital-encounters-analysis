@@ -1,9 +1,28 @@
 # hospital-encounters-analysis
 A real-world healthcare analytics case study exploring utilization, costs, and patient readmissions using MySQL and Power BI.
 
+## 📚 Table of Contents
 
-# 🏥 Hospital Analytics  
-### Trends, Costs, and Patient Behavior Insights
+- [📌 Executive Summary](#-executive-summary)
+- [🎯 What This Project Demonstrates](#-what-this-project-demonstrates)
+- [🏥 Business Problem](#-business-problem)
+- [🛠 Methodology](#-methodology)
+- [📊 Dashboards](#-dashboards)
+  - [Encounter Overview](#-encounter-overview)
+  - [Cost & Coverage Insights](#-cost--coverage-insights)
+  - [Patient Behavior Insights](#-patient-behavior-insights)
+- [💡 Skills Demonstrated](#-skills-demonstrated)
+- [📊 Results & Business Recommendations](#-results--business-recommendations)
+- [📌 Project Source & Attribution](#-project-source--attribution)
+- [🚀 Next Steps](#-next-steps)
+- [🧠 Author](#-author)
+  
+
+## 📌 Project Title
+
+**Hospital Encounter Analytics: Trends, Costs, and Patient Behavior**
+
+An end-to-end healthcare analytics case study analyzing encounter trends, financial risk, and patient utilization patterns using MySQL and Power BI.
 ![SQL](https://img.shields.io/badge/SQL-MySQL-blue)
 ![Power BI](https://img.shields.io/badge/BI-PowerBI-yellow)
 ![Domain](https://img.shields.io/badge/Domain-Healthcare-green)

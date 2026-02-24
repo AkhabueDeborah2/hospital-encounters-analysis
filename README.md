@@ -3,7 +3,8 @@ A real-world healthcare analytics case study exploring utilization, costs, and p
 
 ## 📚 Table of Contents
 
-- [📌 Executive Summary](#-executive-summary)
+- [📌 Project Title](#-project-title)
+- [⭐ Executive Summary](#-executive-summary)
 - [🎯 What This Project Demonstrates](#-what-this-project-demonstrates)
 - [🏥 Business Problem](#-business-problem)
 - [🛠 Methodology](#-methodology)

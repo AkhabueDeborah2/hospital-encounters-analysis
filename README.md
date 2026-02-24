@@ -21,12 +21,12 @@ A real-world healthcare analytics case study exploring utilization, costs, and p
 ## 📌 Project Title
 
 **Hospital Encounter Analytics: Trends, Costs, and Patient Behavior**
-
-An end-to-end healthcare analytics case study analyzing encounter trends, financial risk, and patient utilization patterns using MySQL and Power BI.
 ![SQL](https://img.shields.io/badge/SQL-MySQL-blue)
 ![Power BI](https://img.shields.io/badge/BI-PowerBI-yellow)
 ![Domain](https://img.shields.io/badge/Domain-Healthcare-green)
-![Project Type](https://img.shields.io/badge/Project-Case%20Study-purple)
+![Project Type](https://img.shields.io/badge/Project-Case%20Study-purple)  
+An end-to-end healthcare analytics case study analyzing encounter trends, financial risk, and patient utilization patterns using MySQL and Power BI.
+
 
 ![Dashboard Preview](images/encounter-overview.png)
 

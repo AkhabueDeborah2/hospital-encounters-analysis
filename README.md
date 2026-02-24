@@ -1,8 +1,8 @@
 # hospital-encounters-analysis
 Healthcare analytics case study using MySQL and Power BI to analyze hospital encounters, costs, and patient behavior.
 
-# 🏥 Hospital Encounters Analysis
-A healthcare analytics case study using MySQL and Power BI.
+# 🏥 Hospital Analytics  
+### Trends, Costs, and Patient Behavior Insights
 
 # Executive Summary
 

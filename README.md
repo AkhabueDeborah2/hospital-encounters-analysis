@@ -1,18 +1,6 @@
 # hospital-encounters-analysis
 A healthcare analytics case study exploring utilization, costs, and patient readmissions using MySQL and Power BI.
 
-## 📚 Table of Contents
-
-- [📌 Project Title](#-project-title)
-- [Key Findings](#-key-findings)
-- [Dashboards](#-dashboards)
-- [Executive Summary](#-executive-summary)
-- [Business Recommendations](#-business-recommendations)
-- [Methodology](#-methodology)
-- [Skills Demonstrated](#-skills-demonstrated)
-- [Limitations](#-limitations)
-- [Next Steps](#-next-steps)
-- [🧠 Author](#-author)  
 
 ## 📌 Project Title
 
@@ -23,8 +11,7 @@ A healthcare analytics case study exploring utilization, costs, and patient read
 ![Project Type](https://img.shields.io/badge/Project-Case%20Study-purple)  
 An end-to-end healthcare analytics case study analyzing encounter trends, financial risk, and patient utilization patterns using MySQL and Power BI.
 
-
-![Dashboard Preview](images/encounter-overview.png)
+---
 
 ## 🎯 Key Findings
 
@@ -38,6 +25,23 @@ An end-to-end healthcare analytics case study analyzing encounter trends, financ
 
 **→ Full analysis, dashboards, and recommendations below**
 
+---
+
+## 📚 Table of Contents
+
+- [Project Title](#-project-title)
+- [Key Findings](#-key-findings)
+- [Dashboards](#-dashboards)
+- [Executive Summary](#-executive-summary)
+- [Business Recommendations](#-business-recommendations)
+- [Methodology](#-methodology)
+- [Skills Demonstrated](#-skills-demonstrated)
+- [Limitations](#-limitations)
+- [Next Steps](#-next-steps)
+- [Author](#-author)
+
+
+---
 
 ## 📊 Dashboards
 
@@ -83,6 +87,46 @@ Analyzed 15K+ hospital encounters to identify financial risk, utilization patter
 
 ---
 
+
+## 🛠 Methodology
+
+**Data Analysis (MySQL):**
+- Encounter aggregation by year, class, and procedure type
+- 30-day readmission cohort identification using `LEAD()` window function
+- Length-of-stay calculation with `TIMESTAMPDIFF()`
+- Cost analysis and payer coverage assessment
+
+→ [View complete SQL code](sql/hospital-encounters-analysis.sql)
+
+**Visualization (Power BI):**
+- 3 executive dashboards: Encounter Overview | Cost & Coverage Insights | Patient Behavior
+- Consistent design hierarchy and executive-ready presentation
+- DAX measures for dynamic metrics
+
+**Data Transformation:**
+- Created BI-ready aggregated views
+- Standardized metric definitions (e.g., 30-day readmission logic)
+- Structured outputs optimized for dashboard consumption
+
+ 
+---
+
+## 💡 Skills Demonstrated
+
+**SQL:**
+Aggregation, filtering, window functions (`LEAD`, `DATEDIFF`), cohort analysis, view creation
+
+**Power BI:**
+Executive dashboard design, DAX measures, data modeling, visual storytelling
+
+**Healthcare Analytics:**
+30-day readmission logic, utilization pattern analysis, cost driver identification, payer coverage analysis
+
+**Business Communication:**
+Translating clinical data into executive-ready insights and actionable recommendations 
+
+---
+
 ## 📊 Business Recommendations
 
 **1. Optimize Outpatient Capacity**
@@ -114,72 +158,28 @@ Finding: 771 patients readmitted within 30 days, concentrated among small subset
 **Executive Takeaway:**
 Targeted interventions in coverage gaps, short-stay workflows, and high-utilization segments can significantly improve care efficiency and financial resilience without requiring large structural changes.
 
+---
 
+## ⚠ Limitations
 
-## 🛠 Methodology
+While the analysis provides strong directional insights, several limitations should be considered:
 
-**Data Analysis (MySQL):**
-- Encounter aggregation by year, class, and procedure type
-- 30-day readmission cohort identification using `LEAD()` window function
-- Length-of-stay calculation with `TIMESTAMPDIFF()`
-- Cost analysis and payer coverage assessment
-
-→ [View complete SQL code](sql/hospital-encounters-analysis.sql)
-
-**Visualization (Power BI):**
-- 3 executive dashboards: Encounter Overview | Cost & Coverage Insights | Patient Behavior
-- Consistent design hierarchy and executive-ready presentation
-- DAX measures for dynamic metrics
-
-**Data Transformation:**
-- Created BI-ready aggregated views
-- Standardized metric definitions (e.g., 30-day readmission logic)
-- Structured outputs optimized for dashboard consumption
-
-
-## 🎯 What This Project Demonstrates
-
-This project showcases an end-to-end healthcare analytics workflow:
-
-- Translating raw clinical encounter data into actionable insights  
-- Writing structured SQL for aggregation and cohort analysis  
-- Building BI-ready semantic layers using views  
-- Designing executive dashboards in Power BI  
-- Communicating findings through business recommendations  
-- Applying healthcare domain context to interpret results
-
-  
-## 🎯 Business Problem
-
-Healthcare administrators need visibility into:
-
-1. How encounter volume changes over time  
-2. Which types of care dominate service delivery  
-3. Where financial risk exists due to coverage gaps  
-4. Which patients contribute to repeat utilization  
-
-Without structured analysis, decision-makers lack clarity on operational and financial performance.
- 
+- The dataset is synthetic and may not fully represent real-world healthcare variability.  
+- Absence of clinical severity indicators limits deeper risk stratification.  
+- No demographic or socioeconomic segmentation was included in this iteration.  
+- The analysis is cross-sectional and does not track long-term patient outcomes.
 
 ---
 
+## 🚀 Next Steps
+- Introduce star schema modeling for enhanced BI scalability  
+- Expand into predictive modeling for readmission risk
+- Add time-intelligence measures using a dedicated date dimension
+- Conduct deeper segmentation of high-frequency utilizers
 
-
-## 💡 Skills Demonstrated
-
-**SQL:**
-Aggregation, filtering, window functions (`LEAD`, `DATEDIFF`), cohort analysis, view creation
-
-**Power BI:**
-Executive dashboard design, DAX measures, data modeling, visual storytelling
-
-**Healthcare Analytics:**
-30-day readmission logic, utilization pattern analysis, cost driver identification, payer coverage analysis
-
-**Business Communication:**
-Translating clinical data into executive-ready insights and actionable recommendations 
 
 ---
+
 
 ## 📁 Repository Structure
 
@@ -195,32 +195,13 @@ hospital-encounters-analysis/
 │   └── hospital-encounters-analysis.sql
 │
 └── README.md
-```   
+```
 
----
-
-## ⚠ Limitations
-
-While the analysis provides strong directional insights, several limitations should be considered:
-
-- The dataset is synthetic and may not fully represent real-world healthcare variability.  
-- Absence of clinical severity indicators limits deeper risk stratification.  
-- No demographic or socioeconomic segmentation was included in this iteration.  
-- The analysis is cross-sectional and does not track long-term patient outcomes.
-
----
 
 ## 📌 Project Source & Attribution
 This project is based on a guided case study from Maven Analytics.  
 SQL implementation, dashboard design, and extended analysis were completed independently.
 
----
-
-## 🚀 Next Steps
-- Introduce star schema modeling for enhanced BI scalability  
-- Expand into predictive modeling for readmission risk
-- Add time-intelligence measures using a dedicated date dimension
-- Conduct deeper segmentation of high-frequency utilizers  
 
 ---
 

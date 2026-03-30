@@ -1,6 +1,7 @@
 # hospital-encounters-analysis
 A healthcare analytics case study exploring utilization, costs, and patient readmissions using MySQL and Power BI.
 
+---
 
 ## 📌 Project Title
 
@@ -31,6 +32,7 @@ An end-to-end healthcare analytics case study analyzing encounter trends, financ
 
 - [Project Title](#-project-title)
 - [Key Findings](#-key-findings)
+- [Table of Content](#-table-of-content)
 - [Dashboards](#-dashboards)
 - [Executive Summary](#-executive-summary)
 - [Business Recommendations](#-business-recommendations)
@@ -38,6 +40,8 @@ An end-to-end healthcare analytics case study analyzing encounter trends, financ
 - [Skills Demonstrated](#-skills-demonstrated)
 - [Limitations](#-limitations)
 - [Next Steps](#-next-steps)
+- [Repository Structure](#-repository-structure)
+- [Project Source & Attribution](#-project-source--attribution)
 - [Author](#-author)
 
 
@@ -153,8 +157,6 @@ Finding: Public and uninsured groups showed highest average claim costs
 Finding: 771 patients readmitted within 30 days, concentrated among small subset
 → Care management programs: follow-up calls, discharge planning, dedicated care coordinators
 
----
-
 **Executive Takeaway:**
 Targeted interventions in coverage gaps, short-stay workflows, and high-utilization segments can significantly improve care efficiency and financial resilience without requiring large structural changes.
 
@@ -197,6 +199,7 @@ hospital-encounters-analysis/
 └── README.md
 ```
 
+---
 
 ## 📌 Project Source & Attribution
 This project is based on a guided case study from Maven Analytics.  

@@ -31,8 +31,7 @@ An end-to-end healthcare analytics case study analyzing encounter trends, financ
 ## 📚 Table of Contents
 
 - [Project Title](#-project-title)
-- [Key Findings](#-key-findings)
-- [Table of Content](#-table-of-content)
+- [Key Findings](#-key-findings) 
 - [Dashboards](#-dashboards)
 - [Executive Summary](#-executive-summary)
 - [Business Recommendations](#-business-recommendations)
